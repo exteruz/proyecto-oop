@@ -1,0 +1,14 @@
+:root {
+    --background_color: #1F1D2B;
+    --primary_color: #FF8700;
+    --secondary_color: #22B07D;
+    --letter_color: white;
+    --container-color: #252836;
+  }
+body{
+    color:var(--letter_color) ;
+    display: flex;
+    flex-direction: row;
+    background-color: #FF8700;
+    padding: 2%;
+}

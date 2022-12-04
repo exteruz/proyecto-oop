@@ -1,0 +1,71 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='{%static "css/base.css" %}' >
+    <script src="https://kit.fontawesome.com/c14b876f89.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+
+    <title></title>
+</head>
+<body>
+
+    {% if user.is_authenticated %}
+    <nav id="Nav-container">
+        <ul class="Nav-ul">
+
+         <li><a href="../">Inicio</a></li>
+         <li><a href="">Sobre nosotros</a></li>
+          <div class="icon_container" >
+            <li><a href="/publicaciones_usuario/">Mis publicaciones</a></li>
+
+          </div>
+        
+         <li><a href="accounts/logout/">Salir</a> </li>
+ 
+         <div class="btn">
+            
+
+            <li><a class="btn_main" href="../crear_publicacion/">Crear</a></li>
+         </div>
+         
+        </ul>
+
+    </nav>
+    {% else %}
+    <nav class="Nav-container">
+        <ul class="Nav-ul">
+
+         <li><a href="">Inicio</a></li>
+         <li><a href="">Sobre nosotros</a></li>
+         <div class="icon_container">
+            
+            <li><a href="/accounts/login/">Entrar</a></li>
+
+         </div>
+         <div class="btn">
+            <a class="btn_main"class="btn btn-success" href="/usuario/Registrarse/ ">Registrarse</a></li>
+ 
+         </div>
+         <li>
+        </ul>
+
+    </nav>
+
+    {% endif %}
+
+    {% block content %}
+    
+    {% endblock %}
+  
+</body>
+
+
+
+</html>

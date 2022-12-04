@@ -1,0 +1,67 @@
+:root {
+    --background_color: #1F1D2B;
+    --primary_color: #FF8700;
+    --secondary_color: #22B07D;
+    --letter_color: white;
+    --container-color: #252836;
+
+  }
+
+*{
+    background-color: var(--container_color);
+    color: var(--letter_color);
+}
+body{
+    display: flex;
+    background-color: var(--container-color);
+    align-items: center;
+    justify-content: center;
+
+}
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--background_color);
+    margin-top: 5%;
+}
+#form{
+    display: flex;
+   padding: 2%;
+    flex-direction: column;
+    background-color: var(--background_color);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+   
+    
+}
+input{
+    border: none;
+    background-color: var(--container-color);
+    width: 100%;
+   
+}
+
+input:hover{
+    background-color: var(--background_color);
+    box-shadow: 0 0 2em 0.1em var(--secondary_color);
+}
+
+input:focus
+{
+  font-size: 0.9em;
+  box-shadow: 0 0 2em 0.1em var(--secondary_color);
+ 
+}
+select{
+    background-color: var(--background_color);
+}
+
+label{
+    color: var(--letter_color);
+}
+div{
+    background-color: var(--container-color);
+}

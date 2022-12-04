@@ -1,0 +1,57 @@
+
+:root {
+    --background_color: #1F1D2B;
+    --primary_color: #FF8700;
+    --secondary_color: #22B07D;
+    --letter_color: white;
+    --container-color: #252836;
+  }
+*{
+    background-color: var(--background_color);
+}
+body{
+    background-color: var(--background_color);
+}
+#container{
+    display: flex;
+    flex-direction: row;
+   background-color: var(--container-color);
+   padding: 1%;
+   border-radius: 15px;
+   margin-top: 3%;
+   width: 70vw;
+   height: 70vh;
+   justify-content: space-between;}
+#body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+#content{
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    
+    
+
+}
+#container-image{
+    width: 40%;
+    height: 100%;
+}
+#image{
+    height: 100%;
+}
+.text{
+    color: var(--letter_color);
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
